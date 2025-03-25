@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 15em 1fr;
+    grid-template-rows: 1fr 5fr;
+    height: 100%;
+}
+
+.sidebar {
+    background-color: salmon;
+    color: black;
+    grid-row: 1/-1;
+}
+
+.header {
+    background-color: lavender;
+}
+
+.content {
+    background-color: lavenderblush;
+}
+
+.sidebar {
+    display: grid;
+    grid-template-rows: 3em 13em 7em 1fr;
+    justify-content: flex-start;
+    padding: 10px;
+    gap: 20px;
+    font-size: 1.5rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 2em;
+}
+
+.pages, .settings {
+    padding: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pages li,
+.settings li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 2em;
+}
+
+.pages img, 
+.settings img {
+    width: 1.2em;
+}
+
+
+.header {
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px;
+    box-shadow: 0px 5px 10px lightgray;
+}
+
+.search {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 30px;
+    gap: 10px;
+}
+
+.search img {
+    width: 1.5em;
+}
+
+.search form {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 1.5em;
+    display: flex;
+}
+
+.search input {
+    width: 40em;
+    border-radius: 20px;
+    border: 2px solid gray;
+    padding: 10px;
+    background-color: whitesmoke;    
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 80px;
+    gap: 30px;
+    font-weight: bold;
+}
+
+.icons img#bell {
+    width: 1.5em;
+}
+
+.icons img#pfp {
+    width: 2.5em;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+.profile {
+    padding-left: 30px;
+    display: grid;
+    height: 4em;
+    grid-template-rows: 1fr 2fr 1fr 4fr;
+    grid-template-columns: 4em 1fr;
+    column-gap: 30px;
+    font-weight: bold;
+}
+
+.profile img {
+    grid-row: 1/5;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+.profile p:first-of-type {
+    grid-row: 2/3;
+    margin: 0;
+    font-size: 0.8em;
+
+}
+
+.profile p + p {
+    grid-row: 4/5;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.buttons {
+    margin-right: 80px;
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+    align-items: center;
+}
+
+.buttons button {
+    width: 8em;
+    height: 2.5em;
+    background-color: salmon;
+    border-radius: 20px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
